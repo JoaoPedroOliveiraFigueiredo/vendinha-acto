@@ -6,3 +6,5 @@
 - Criar classe ClienteEntity
 - Popular classe Produto
 - Criar class ProdutoEntity
+
+### 09/01/2023
