@@ -10,7 +10,7 @@ public class ClienteEntity extends GenericEntity<Cliente>{
     public List<Cliente> clientes;
 
     public ClienteEntity() {
-        this.clientes = new ArrayList<>();
+        this.clientes = new ArrayList<Cliente>();
     }
 
     @Override

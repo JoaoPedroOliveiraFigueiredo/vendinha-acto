@@ -10,7 +10,7 @@ public class PessoaFisicaEntity extends GenericEntity<PessoaFisica> {
     public List<PessoaFisica> pessoasFisicas;
 
     public PessoaFisicaEntity() {
-        this.pessoasFisicas = new ArrayList<>();
+        this.pessoasFisicas = new ArrayList<PessoaFisica>();
     }
 
     @Override

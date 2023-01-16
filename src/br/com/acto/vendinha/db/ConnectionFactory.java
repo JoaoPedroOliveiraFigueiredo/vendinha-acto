@@ -1,6 +1,8 @@
 package br.com.acto.vendinha.db;
 
+import java.sql.Connection;
+
 public interface ConnectionFactory {
 
-    void conectarDB(); // método abstrato
+    Connection conectarDB(); // método abstrato
 }
