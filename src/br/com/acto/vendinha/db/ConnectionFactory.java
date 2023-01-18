@@ -4,5 +4,8 @@ import java.sql.Connection;
 
 public interface ConnectionFactory {
 
-    Connection conectarDB(); // método abstrato
+    Connection conectarDB();
+
+    Connection getConexao();
+
 }

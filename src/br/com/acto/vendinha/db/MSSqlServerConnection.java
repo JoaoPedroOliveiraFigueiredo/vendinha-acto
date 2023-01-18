@@ -6,16 +6,26 @@ import java.sql.SQLException;
 
 public class MSSqlServerConnection implements ConnectionFactory{
 
+    private Connection connection;
+
     public Connection conectarDB() {
 
-        String connectionURL = "jdbc:sqlserver://localhost:1433;databaseName=vendinha";
+        String connectionURL = "jdbc:sqlserver://localhost:1433;databaseName=vendinha;encrypt=false;user=admin;password=admin";
         try {
-            Connection con = DriverManager.getConnection(connectionURL);
-            return con;
+            System.out.println("Iniciando conexão com o DB...");
+            connection = DriverManager.getConnection(connectionURL);
+            System.out.println("Banco de dados conectado com sucesso!");
+            return connection;
         } catch (SQLException e) {
             System.out.println("Erro ao conectar no BD");
             e.printStackTrace();
             return null;
         }
+    }
+
+    public Connection getConexao() {
+        if(connection == null) {
+            return this.conectarDB();
+        } else return connection;
     }
 }

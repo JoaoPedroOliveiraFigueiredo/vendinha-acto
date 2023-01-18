@@ -7,4 +7,5 @@
 - Popular classe Produto
 - Criar class ProdutoEntity
 
-### 09/01/2023
+### 18/01/2023
+- Atividade : Criar tabelas (pessoa_fisica, pessoa_juridica e produto) através na Main
