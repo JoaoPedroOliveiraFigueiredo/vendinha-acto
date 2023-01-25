@@ -12,9 +12,7 @@ public class MSSqlServerConnection implements ConnectionFactory{
 
         String connectionURL = "jdbc:sqlserver://localhost:1433;databaseName=vendinha;encrypt=false;user=admin;password=admin";
         try {
-            System.out.println("Iniciando conexão com o DB...");
             connection = DriverManager.getConnection(connectionURL);
-            System.out.println("Banco de dados conectado com sucesso!");
             return connection;
         } catch (SQLException e) {
             System.out.println("Erro ao conectar no BD");
